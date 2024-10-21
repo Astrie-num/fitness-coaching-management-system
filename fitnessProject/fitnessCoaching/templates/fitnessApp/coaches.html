@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Coaches</title>
+</head>
+<body>
+    <h1>List of Available Coaches</h1>
+    <ul>
+        {% for coach in coaches %}
+            <li>{{ coach.name }} - {{ coach.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
