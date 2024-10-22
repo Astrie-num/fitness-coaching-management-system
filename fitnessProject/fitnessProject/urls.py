@@ -17,8 +17,10 @@ Including another URLconf
 
 # from django.contrib import admin
 from django.urls import path
-from . import views
+from fitnessCoaching import views as coaches_views
+from clientsApp import views as clients_views
 
 urlpatterns = [
-    path("coaches/", views.display_coaches, name = 'display_coaches'),
+    path("coaches/", coaches_views.display_coaches, name = 'display_coaches'),
+    path("clients/", clients_views.display_clients, name = 'display_clients'),
 ]

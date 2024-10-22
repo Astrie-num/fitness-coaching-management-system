@@ -1,13 +1,13 @@
 from django.db import models
 
-class Coaches(models.Model):
-    name = models.CharField(max_length=100)
+class Clients(models.Model):
+    name = models.CharField(max_length = 100)
     description = models.TextField()
- 
+
     STATUS = [("active", "Active"), ("inactive", "Inactive")]
 
     body_type = models.CharField(max_length=100, unique=False)  
-    coach_age = models.CharField(max_length=2, unique=False)    
+    client_age = models.CharField(max_length=2, unique=False)    
 
     class Meta:
-        db_table = "coaches"
+        db_table = "clients"
