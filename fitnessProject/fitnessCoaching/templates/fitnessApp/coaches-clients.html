@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Coaches</title>
+</head>
+<body>
+    <h1>Coach Details</h1>
+    <p>Name : {{coaches.name}}</p>
+    <p>Email : {{coaches.email}}</p>
+    <p>Body type : {{coaches.body_type}}</p>
+    <p>Coach age : {{coaches.coach_age}}</p>
+
+    <h1>Client Details</h1>
+    {% if clients == "No related client" %}
+        <p>{{ clients }}</p>
+    {% else %}
+        <p>Name : {{clients.name}}</p>
+        <p>Email : {{clients.email}}</p>
+    {% endif %}
+
+    <br> 
+</body>
+</html>
